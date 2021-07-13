@@ -50,7 +50,6 @@ nav ul li a{
 }
 .logo{
 	font-family: 'Damion', cursive;
-	/* font-family:RoadTest; */
 	color:#000000;
 	font-size: 22px;
 }
@@ -143,6 +142,7 @@ button:active{
 }
 .about-text{
 	width:500px;
+	text-align: justify;
 } 
 .about-text p:nth-child(1){
 	color:#403e3e;
@@ -163,17 +163,21 @@ button:active{
 	font-family:calibri;
 	font-size:16px;
 }
-.about-text button{
+.about-text button,
+.about-text a button{
 	width:120px;
 	height: 40px;
-	color:#ffffff;
-	outline:none;
+	margin-right: 20px;
 	border:none;
 	font-family: calibri;
-	background-color:#262525;
-	margin-right: 20px;
-	border-radius: 30px;
-	transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #494446;
+    border-radius: 0.5em;
+    padding: 0.3em 1em;
+    text-transform: uppercase;
+    box-shadow: inset 2px 2px 3px rgba(77, 69, 69, 0.6);
+    background: linear-gradient(#BE757E, #E6E5E5, #DEBBBF);
+    border: none;
+	transition: cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .about-text .about-button:hover,
@@ -271,23 +275,24 @@ color:#7e7d7d;
 .box-3 button{
 	width:100px;
 	height:30px;
-	background-color:#FFFFFF;
+	background: linear-gradient(45deg,#008b8b,#00ffff);
 	border:none;
 	outline: none;
 	border-radius:5px;
 }
-.profile .btn-1{
-    font-size: 0.6em;
-    font-weight: 700;
-    color: #494446;
-    border-radius: 0.5em;
-    margin-top: 3em;
-    padding: 0.3em 1em;
-    text-transform: uppercase;
-    box-shadow: inset 2px 2px 3px rgba(77, 69, 69, 0.6);
-    background: linear-gradient(#70A0D3, #8be6e9, #7EBADE);
-    border: none;
-    transition:0.1s ;}
+.box-1 button:hover,
+.box-2 button:hover,
+.box-3 button:hover{
+	transform: none;
+	color: #c5b8b8;
+	background: linear-gradient(#06d1d1,#05d1d1,#05e7e7);
+	box-shadow: 0 1px 2px rgba(255,255,255,0.07), 
+                1px 2px 4px rgba(255,255,255,0.07), 
+                2px 4px 8px rgba(255,255,255,0.07), 
+                4px 8px 16px rgba(255,255,255,0.07),
+                8px 16px 32px rgba(255,255,255,0.07), 
+                16px 32px 64px rgba(255,255,255,0.07);
+}
 
 .contact-me{
 	height:280px;
@@ -298,7 +303,6 @@ color:#7e7d7d;
 	justify-content: center;
 	align-items: center;
 	background-image: url("./image/francesco-ungaro-jqKS0ET-wGE-unsplash.jpg");
-	/* margin: 0px 0px 20px 0px; */
 }
 .contact-me p{
 	color:#FFFFFF;
@@ -315,6 +319,7 @@ color:#7e7d7d;
 	outline:none;
 	font-size:14px;
 	font-weight:bold;
+
 }
 
 footer p{
@@ -364,14 +369,13 @@ footer{
 	transition:all ease 0.5s;
 }
 .social-icons a:nth-child(3):hover{
-	background-color:#009DEC;
+	background-color:#3FB0F4;
 	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
 	transition:all ease 0.5s;
 }
 .social-icons a:nth-child(2):hover{ 
-	background: #f09433; 
- 	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+	 background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
@@ -409,8 +413,8 @@ footer{
 	padding: 0px;
 	line-height:0px;
 	background-color:#FFFFFF;
-	border:1px solid #CBCBCB;
-	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	/* border:1px solid #CBCBCB; */
+	box-shadow:2px 2px 12px rgba(0,0,0,0.3);
 }
 
 .social a:nth-child(1):hover{
@@ -419,7 +423,7 @@ box-shadow:2px 2px 12px rgba(0,0,0,0.2);
 transition:all ease 0.5s;
 }
 .social a:nth-child(3):hover{
-background-color:#009DEC;
+background-color:#3FB0F4;
 box-shadow:2px 2px 12px rgba(0,0,0,0.2);
 transition:all ease 0.5s;
 }
